@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+env/
+.env
+
+# tokens
+AIPIPE_TOKEN
+GITHUB_TOKEN
+
+# generated repos
+generated_repos/

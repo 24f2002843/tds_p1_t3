@@ -1,0 +1,9 @@
+__pycache__/
+.venv/
+generated_repos/
+.git
+*.pyc
+.env
+AIPIPE_TOKEN
+GITHUB_TOKEN
+DEPLOY_SECRET
