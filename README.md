@@ -132,7 +132,7 @@ If GitHub automation fails due to missing tokens/gh CLI, the server still genera
 
 API Usage
 POST /api-deploy
-- Accepts a JSON body matching the spec in the challenge. Validates `secret` against the hard-coded value `abc123xyz`.
+- Accepts a JSON body matching the spec in the challenge. Validates `secret` against the hard-coded value `abc`.
 
 Response
 - 200 OK: {"ok": true, "repo_url": ..., "commit_sha": ..., "pages_url": ...}
@@ -140,5 +140,4 @@ Response
 Security
 - Secrets must be provided as environment variables. The service writes `.gitignore` to ignore sensitive files.
 
-License
-MIT
+
