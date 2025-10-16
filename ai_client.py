@@ -128,7 +128,7 @@ EVOLUTION RULES:
 3. If Round 2 only tweaks design or small behavior, keep Round 1 logic intact and overwrite only the necessary parts.
 
 STRICT RULES:
-4. Use and reference every attachment meaningfully when possible.
+4. Use and reference every attachment meaningfully when possible. When referencing attachments (images, CSVs, etc.) in index.html or other files, ALWAYS use the direct filename (e.g., 'captcha.jpg') as it appears in the repo root, NOT a relative path or folder structure. For example, use <img src="captcha.jpg">, not <img src="assets/captcha.jpg">. This ensures correct visibility and linking in the page and code.
 5. README.md: Append/update sections; include "How to run", "Features", "Accessibility", "Design tokens (CSS variables/palette)", "API endpoints used", "Attachments used", "Keyword coverage", and a "Changelog: Round {round}" describing exactly what changed.
 6. LICENSE: Use the full canonical MIT License text (idempotent), including year and owner.
 7. Output MUST be ONLY a single JSON object mapping file paths to full file contents (not diffs). No markdown fences, no extra explanation.
